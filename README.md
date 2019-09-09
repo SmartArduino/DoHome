@@ -1,3 +1,5 @@
+
+# English
 DoHome_HomeKit_Firmware: 
 DoHome device firmware, you can use this firmware, including native support for HomeKit, Google Assisitant, Alexa, Skycat Elf, Little Love Classmate, Small Degree.
  
@@ -7,7 +9,7 @@ To increase the playfulness of the device, the DoHome device opens upgrade inter
 
 More Information: http://support.doiting.com/
 
-
+# 中文版
 DoHome_HomeKit_firmware: 
 DoHome设备固件，您可以使用此固件，功能包括原生支持HomeKit、Google Assisitant,Alexa,天猫精灵、小爱同学、小度。
  
