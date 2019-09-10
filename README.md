@@ -5,13 +5,13 @@
 
 ### Introduction
 
-This firmware is developed by (DOITING)[http://doiting.com/]. By using ONLY this firmware, smart devices (e.g., bulb or plug) can be controlled by DoHome APP or/and HomeKit. Anyone can download it to use the smart devices. If you have any problem, please contact us: yichone@doit.am. More details, please visit: http://support.doiting.com.
+This firmware is developed by [DOITING](http://doiting.com/). By using ONLY this firmware, smart devices (e.g., bulb or plug) can be controlled by DoHome APP or/and HomeKit. Anyone can download it to use the smart devices. If you have any problem, please contact us: yichone@doit.am. More details, please visit: http://support.doiting.com.
 
 You can get the items from http://www.esp8266m
 
 ### Warm Tips
 
-* For iOS user, it is very convenient to use the "HomeKit" by (the manual)[http://doiting.com/]; 
+* For iOS user, it is very convenient to use the "HomeKit" by [the manual](http://doiting.com/); 
 * For Android usr, it is much more complex to use the "HomeKit", please visit "HomeKit For Android" at ????.
 * For all the (iOS and Android) users, DoHome APP can be used to control the smart devices, and supports for the following smart speakers:
   * Alexa;
