@@ -95,9 +95,11 @@ saved SSID: , passwd:
 reset_count=0
 >>> write reset count 1
 ```
-## 5.技术支持
 
+## 5.固件使用说明
+  固件使用说明详参：http://support.doiting.com/?tdsourcetag=s_pcqq_aiomsg
+
+## 6.技术支持
 技术支持QQ群：637971101
 邮箱：song@doit.am
-
 
