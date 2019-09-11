@@ -12,7 +12,6 @@ You can get the items from http://www.esp8266m
 ### Warm Tips
 
 * For iOS user, it is very convenient to use the "HomeKit" by [the manual](http://doiting.com/); 
-* For Android usr, it is much more complex to use the "HomeKit", please visit "HomeKit For Android" at ????.
 * For all the (iOS and Android) users, DoHome APP can be used to control the smart devices, and supports for the following smart speakers:
   * Alexa;
   * Google Assistant;
