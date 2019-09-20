@@ -7,7 +7,7 @@
 
 This firmware is developed by [DOITING](http://doiting.com/). By using ONLY this firmware, smart devices (e.g., bulb or plug) can be controlled by DoHome APP or/and HomeKit. Anyone can download it to use the smart devices. If you have any problem, please contact us: yichone@doit.am. More details, please visit: http://support.doiting.com.
 
-You can get the items from http://www.esp8266m
+You can get the items from http://www.esp8266module.com
 
 ### Warm Tips
 
@@ -26,6 +26,12 @@ When you have DoHome smart device products, and you want to try other company pr
 Note: Before upgrading the firmware, please think agian and again, since you must accept the upgrading failure.
 
 More Information: http://support.doiting.com/
+
+Go to Amazon or aliexpress to buy a socket
+
+Link：<br>
+https://www.amazon.com/gp/product/B07WSYQ38T<br>
+https://www.aliexpress.com/item/4000113988602.html
 
 # 中文版
 DoHome_HomeKit_firmware: 
