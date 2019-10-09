@@ -20,14 +20,14 @@ SPI SPEED: 40MHZ
 SPI MODE:  DOUT
 FLASH SIZE: 8Mbit
 ```
-![markdown](https://github.com/SmartArduino/DoHome/blob/master/Homekit_firmware/doc/20190907134747.png "config")
+![markdown](https://github.com/SmartArduino/DoHome/blob/master/DoHome_HomeKit_Firmware/doc/20190907134747.png "config")
 
 ## 3.硬件接线
 
 下载时需要GPIO0 拉低，然后RST拉低一下，模块复位后检测到GPIO0处于低电平，模块进入下载模式
 
 最小系统：
-![markdown](https://github.com/SmartArduino/DoHome/blob/master/Homekit_firmware/doc/esp-m%E6%A8%A1%E5%9D%97%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F.png "config")
+![markdown](./doc/esp-m%E6%A8%A1%E5%9D%97%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F.png "config")
 
 ## 4.设备管脚对应表
 ### （1）美规/欧规插座
@@ -95,9 +95,11 @@ saved SSID: , passwd:
 reset_count=0
 >>> write reset count 1
 ```
-## 5.技术支持
 
+## 5.固件使用说明
+  固件使用说明详参：http://support.doiting.com/?tdsourcetag=s_pcqq_aiomsg
+
+## 6.技术支持
 技术支持QQ群：637971101
 邮箱：song@doit.am
-
 
