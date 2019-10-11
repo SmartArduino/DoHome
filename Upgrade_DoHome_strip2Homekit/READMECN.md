@@ -26,7 +26,7 @@
 ### 3.1连接Dohome_xxxx热点
 
 &emsp;&emsp;给灯带控制器上电，连接模块建立热点 `Dohome_xxxx` （xxxx为id），密码：`12345678` ，连接成功进入下一步。
-
+![图片](./doc/tu2.png)
 
 注意：如果灯带控制器已经配置过wifi，连续插拔三次电源恢复出厂，模块建立热点。
 
@@ -35,14 +35,17 @@
 &emsp;&emsp;打开电脑上的升级工具 `DoHome_v212.exe` 进入 `DoHome upgrade` 界面，在`u1 path` ，`u2 path`填入对应的 `mid_u1.bin` 
 和 `mid_u2.bin` 临时固件; `Device IP` 填入：`192.168.4.1`
 ![图片](./doc/tu1.png)
+
 其他区域不用填写。点击Start upgrading即可开始升级。
 
 ### 3.3升级完成
 &emsp;&emsp;等待进度条走到100%，提示升级完成；模块将会重启，建立热点，`dohome_updata_XXXXXXXXXXXX`,
+![图片](./doc/tu3.png)
 
 连接这个热点，用浏览器访问 `http://192.168.4.1`,然后输入家里的wifi名称和密码，
+![图片](./doc/tu4.png)
 
 灯带控制器连接这个热点后会从服务器下载最新的homekit灯带固件和boot引导
 
 这个过程中灯带会灭和闪烁之前切换。等到灯带颜色变成红-》绿-》蓝-》白,白色常亮后即升级到homekit固件，这时可以看到热点Homekit_xxxx
-
+![图片](./doc/tu5.png)
