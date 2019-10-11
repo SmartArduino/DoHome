@@ -12,7 +12,7 @@
 ### 2.1软件
 升级工具：
 
-&emsp;&emsp;下载连接：
+&emsp;&emsp;下载连接：http://support.doiting.com/DoHome.zip
 
 &emsp;&emsp;如果你的电脑是32位系统则下载DoHome_JRE_32.zip；64位系统则下载DoHome_JRE_64.zip
 
@@ -34,6 +34,7 @@
 
 &emsp;&emsp;打开电脑上的升级工具 `DoHome_v212.exe` 进入 `DoHome upgrade` 界面，在`u1 path` ，`u2 path`填入对应的 `mid_u1.bin` 
 和 `mid_u2.bin` 临时固件; `Device IP` 填入：`192.168.4.1`
+![图片](./doc/tu1.png)
 其他区域不用填写。点击Start upgrading即可开始升级。
 
 ### 3.3升级完成
