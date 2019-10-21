@@ -2,6 +2,8 @@
 
    <img src="../readme_image/5.png" width="400" />
 
+# 产品效果图
+   <img src="../readme_image/1.png" width="250" />      <img src="../readme_image/2.png" width="250" />
 ## 2.产品参数
 | 参数                        | 数值                    |
 | ---------------------------| ------------------------| 
