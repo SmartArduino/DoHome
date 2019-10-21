@@ -1,4 +1,4 @@
-## 产品外观
+## 1.产品外观
+产品外观图如下：
 
-
-     <img src="../readme_image/download.png" width="400" />
+     <img src="../readme_image/Exterior.png" width="400" />
