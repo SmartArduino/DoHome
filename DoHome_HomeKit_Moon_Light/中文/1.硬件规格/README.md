@@ -1,6 +1,6 @@
 ## 1.产品外观
 
-   <img src="../readme_image/EXterior.png" width="400" />
+   <img src="../readme_image/5.png" width="400" />
 
 ## 2.产品参数
 | 参数                        | 数值                    |
