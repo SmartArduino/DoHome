@@ -18,6 +18,7 @@
 ## 3.IO Port Description
 
 |Features     |    GPIO         |
+| ---------------------------| ------------------------| 
 |Red(r)             |GPIO12                 |
 |Gree(g)      |       GPIO14         |
 |Blue(b)             |GPIO5                 |
