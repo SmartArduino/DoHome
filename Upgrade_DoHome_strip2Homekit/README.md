@@ -12,10 +12,13 @@ When we talk about Upgrade the Dohome to Homekit,  actually we upgrade the Dohom
 ### 2.1 Software
 
 upgrade tools:
+
 &emsp;&emsp;Download: http://support.doiting.com/DoHome.zip
+
 &emsp;&emsp;Download DoHome_JRE_32.zip intermediate temporary firmware if your computer is a 32-bit system and DoHome_JRE_64.zip intermediate temporary firmware for a 64-bit system.
 
-Intermediate temporary firmware：
+Intermediate temporary firmware:
+
 &emsp;&emsp;Download: http://support.doiting.com/DoHome.zip
 
 ### 2.22 Hardware
