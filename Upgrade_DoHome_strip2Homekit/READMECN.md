@@ -1,4 +1,4 @@
-<a href="https://github.com/SmartArduino/DoHome/blob/master/Upgrade_DoHome_IoT_devices/README.md">English</a> | 中文版
+<a href="./README.md">English</a> | 中文版
 
 # Dohome灯带升级到Homekit固件
 
