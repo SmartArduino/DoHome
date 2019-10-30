@@ -26,23 +26,27 @@ Intermediate temporary firmware：
 ### 3.1 Connecting Dohome_xxxx Hotspots
 
 &emsp;&emsp;Power on the light strip controller, connect the hot spot Dohome_xxxx (xxxx is id),password: 12345678. Connect successfully, then move to next step.
+
 ![图片](./doc/tu2.png)
 
 Note: If the light strip controller has been configured with wifi, power on and off for three times continuously, the hot spot will be reset.
 
 ### 3.2 Upgrade to temporary firmware
 
-&emsp;&emsp;Open the upgrade tool `DoHome_v212.exe` on the computer to enter the DoHome upgrade interface, fill `mid_u1.bin` temporary firmware in u1 path, `mid_u2.bin` temporary firmware in u2 path;  fill in Device IP: `192.168.4.1` 
+&emsp;&emsp;Open the upgrade tool `DoHome_v212.exe` on the computer to enter the DoHome upgrade interface, fill `mid_u1.bin` temporary firmware in u1 path, `mid_u2.bin` temporary firmware in u2 path;  fill in Device IP: `192.168.4.1`
+
 ![图片](./doc/tu1.png)
 
 (the rest do not needed to fill in).Click Start upgrading to start the upgrade.
 
 ### 3.3 Upgraded
 &emsp;&emsp;Wait for the progress bar to go to 100%, indicating that the upgrade is complete; the module will restart and create a hotspot: `dohome_updata_XXXXXXXXXXXX`
+
 ![图片](./doc/tu3.png)
 
  connect this hotspot,Use your browser to visit: `http://192.168.4.1`
 and enter your home wifi name and password.
+
 ![图片](./doc/tu4.png)
 
 The browser will download the latest homekit lights firmware and boot after the light strip controller is connected to this hotspot
