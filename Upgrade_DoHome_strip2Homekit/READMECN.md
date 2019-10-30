@@ -39,7 +39,7 @@
 其他区域不用填写。点击Start upgrading即可开始升级。
 
 ### 3.3升级完成
-&emsp;&emsp;等待进度条走到100%，提示升级完成；模块将会重启，建立热点，`dohome_updata_XXXXXXXXXXXX`,
+&emsp;&emsp;等待进度条走到100%，提示升级完成；模块将会重启，建立热点，`dohome_strip_updata_XXXX`,
 ![图片](./doc/tu3.png)
 
 连接这个热点，用浏览器访问 `http://192.168.4.1`,然后输入家里的wifi名称和密码，

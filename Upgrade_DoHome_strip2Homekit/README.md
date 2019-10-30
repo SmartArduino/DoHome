@@ -43,7 +43,7 @@ Note: If the light strip controller has been configured with wifi, power on and 
 (the rest do not needed to fill in).Click Start upgrading to start the upgrade.
 
 ### 3.3 Upgraded
-&emsp;&emsp;Wait for the progress bar to go to 100%, indicating that the upgrade is complete; the module will restart and create a hotspot: `dohome_updata_XXXXXXXXXXXX`
+&emsp;&emsp;Wait for the progress bar to go to 100%, indicating that the upgrade is complete; the module will restart and create a hotspot: `dohome_strip_updata_XXXX`
 
 ![图片](./doc/tu3.png)
 
