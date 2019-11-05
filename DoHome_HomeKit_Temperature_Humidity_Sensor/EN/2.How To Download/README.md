@@ -5,6 +5,7 @@ The download address of the CH340 serial port driver is: https://github.com/Smar
 Step2：Installation of programming tools
 Install programming tool：
 http://espressif.com/en/support/download/other-tools
-3.Burn the relevant bin file After selecting the appropriate serial port, configure the serial port number, serial port baud rate, etc. as shown below, and press START to start downloading the program.
+
+Step3：Burn the relevant bin file After selecting the appropriate serial port, configure the serial port number, serial port baud rate, etc. as shown below, and press START to start downloading the program.
 
 <img src="../README_IMAGE/3.png" width="400" />
