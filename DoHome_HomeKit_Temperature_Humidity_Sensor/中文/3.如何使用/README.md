@@ -4,31 +4,31 @@
 注：若有多台设备，请注意区分不同的热点名字。如果手机没有自动跳转到配网界面，请打开手机浏览器输入http://192.168.4.1，等待进入配网界面。
 请在跳网面页中选择您的家庭WiFi名称，且请在password中输入密码，点击join。
 
-<img src="../README.IMAGE/4.png" width="400" />
+<img src="../README_IMAGE/4.png" width="400" />
 
 ## 第二步：加入到HomeKit家庭
 1：检查您是否安装Home APP。
 如果没有Home APP,请在App Store商城下载一个Home APP
 
-<img src="../README.IMAGE/5.png" width="400" />
+<img src="../README_IMAGE/5.png" width="400" />
 
 2：请把手机连接到你的家庭WiFi网络
 注意：苹果手机和设备必须是在同一个家庭WiFi网络下，即配置网络是选择的WiFi网络（例如设备配置的是连接PB9这个路由器，那么苹果手机也要连接到PB9这个路由）。
 
-<img src="../README.IMAGE/6.png" width="400" />
+<img src="../README_IMAGE/6.png" width="400" />
 
 3：打开苹果手机Home APP 点击添加配件，请将图6中的设置 代码（123-45-678）放到取景框 内。选择任然添加，等待加密校验 （50s)，添加成功。
 
-<img src="../README.IMAGE/7.png" width="400" />
+<img src="../README_IMAGE/7.png" width="400" />
 
 注意：如果无法识别代码，请点击“没有 代码或无法扫描”，选择刷新出来 的设备，点击仍然添加，输入设置 代码:12345678，等待加密校验 （50s），添加设备成功。
 如果没有刷新到设备，请确认手机和设备是否在同一个局域网络。请确认指示灯是否在常亮状态，如果添加失败，请查看常见问题。
 
 请点击“没有代码或无法扫描”点击刷新出来的设备，仍然添加，等待加密校验（大约30S），添加设备成功。
 
-<img src="../README.IMAGE/8.png" width="400" />
+<img src="../README_IMAGE/8.png" width="400" />
 
-<img src="../README.IMAGE/9.png" width="400" />
+<img src="../README_IMAGE/9.png" width="400" />
 
 如果没有刷新到设备，请确认手机和设备是否在同一个局域网络。请确认指示灯是否在常亮状态，如果添加失败，请查看常见问题。
 Q:配网过程中要注意哪些事项
