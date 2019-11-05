@@ -1,10 +1,5 @@
 ## Step 1: Configure device networking
-When the device is powered on, open a hotspot of Homekit-sensor_xxxx and connect the hotspot of "Homekit-sensor_xxxx" with 
-the password of none, and wait about 3 seconds. The mobile phone will automatically jump to the distribution network interface. 
-Note: If there are multiple devices, please pay attention to distinguishing different hotspot names.
-If the mobile phone does not automatically jump to the distribution network interface, please open the mobile browser 
-input: http://192.168.4.1, waiting to enter the distribution network interface. Please select your family WiFi name in the jump
-page, and enter your password in the password, and click join.
+When the device is powered on, open a hotspot of Homekit-sensor_xxxx and connect the hotspot of "Homekit-sensor_xxxx" with the password of none, and wait about 3 seconds. The mobile phone will automatically jump to the distribution network interface.Note: If there are multiple devices, please pay attention to distinguishing different hotspot names.If the mobile phone does not automatically jump to the distribution network interface, please open the mobile browser input: 192.168.4.1, waiting to enter the distribution network interface. Please select your family WiFi name in the jumppage, and enter your password in the password, and click join.
 
  <img src="../README_IMAGE/4.png" width="400" />
  
@@ -26,9 +21,7 @@ Please open Home APP, click “Add accessory”. And then, Please put the code (
 
   <img src="../README_IMAGE/7.png" width="400" />
   
-If the code is not recognized， please click “Don’t have a code or cannot scan”, Click the device, “Add anyway”, and input the code “12345678”.
-After waiting for the encryption check (about 50s).If Home APP doesn’t show the device, please make sure that the phone and the 
-smart plug are in the same local network. If you still cannot add your device, please look over the Frequent Problems.
+If the code is not recognized， please click “Don’t have a code or cannot scan”, Click the device, “Add anyway”, and input the code “12345678”.After waiting for the encryption check (about 50s).If Home APP doesn’t show the device, please make sure that the phone and the smart plug are in the same local network. If you still cannot add your device, please look over the Frequent Problems.
 
 
 3: Open the Home App and click Add Accessories. Please click "No Code or Scan" and click on the refreshed device, then confirm 
