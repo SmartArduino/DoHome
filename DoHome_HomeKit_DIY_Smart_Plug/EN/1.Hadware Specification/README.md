@@ -24,7 +24,7 @@
 
   <img src="../README_IMAGE/3.png" width="400" />
   
-3.How to use: 
+### 3.How to use: 
 3.1Button control When it is necessary to use the external button to control the operation of the relay, it is only necessary to connect the 5,6 pin external 5V power supply and GND, and the button control function can be realized by shorting the 7,8 button pin.
 
 3.2How to enter download mode When it is necessary to download the firmware of the development board, you can enter the download mode by shorting the 1 and 2 mode pins with the shorting cap, and then connect the 5V power supply pins, GND pins, RX and TX pins respectively with the download tool.
