@@ -3,7 +3,9 @@ The download tools can download from:
 
 If you want to restore the factory firmware, please refer to the following steps. If you download third-party firmware, refer to the following steps.
 
-Step 1: enter the above download address and select the download tool on the interface, download it to the local, and extract it. Step 2: select the plug folder on the interface, click enter to download the latest version of the development board firmware to the local. Select the bootloader folder on the interface and click enter to download the boot firmware of the development board to the local.
+Step 1: enter the above download address and select the download tool on the interface, download it to the local, and extract it.
+
+Step 2: select the plug folder on the interface, click enter to download the latest version of the development board firmware to the local. Select the bootloader folder on the interface and click enter to download the boot firmware of the development board to the local.
 
    <img src="../README_IMAGE/6.png" width="400" />
    
