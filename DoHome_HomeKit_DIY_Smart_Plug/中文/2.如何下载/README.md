@@ -1,6 +1,6 @@
 工具及其固件的下载地址为：
 
-https://github.com/SmartArduino/DoHome/tree/master/DoHome_Hom eKit_Firmware
+[工具地址](https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Firmware)
 
 第一步：进入上面的下载地址然后选中界面上的下载工具，将其进行 下载到本地，解压。
 
