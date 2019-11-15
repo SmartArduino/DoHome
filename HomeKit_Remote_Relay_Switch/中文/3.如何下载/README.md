@@ -14,7 +14,8 @@ step3:固件下载成功后，点击如下链接下载固件下载工具。
 
 固件下载工具地址：https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7.zip
 
-下载工具下载完成后，芯片类型选择8266
+下载工具下载完成后，芯片类型选择8266，选择合适的串口点击START按钮开始下载：
+
 
 Step4：在下载工具上勾选需要下载的固件，其中的地址填写如下表。
 
