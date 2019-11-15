@@ -11,6 +11,7 @@ application_bin：https://github.com/SmartArduino/DoHome/tree/master/DoHome_Home
 
 step3:固件下载成功后，点击如下链接下载固件下载工具。
 固件下载工具地址：https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7.zip
+
 Step4：在下载工具上勾选需要下载的固件，其中的地址填写如下表。
 
 | 固件              | 下载地址      |
