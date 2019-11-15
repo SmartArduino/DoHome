@@ -5,8 +5,9 @@ step1：将远程继电器上的配网模组取下，插上下载器后，使用
 https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.51.3e8c4a9duXJDv0&id=581769095945
 
 step2：与pc机连接正常后，点击如下链接下载相关固件。
+
 bootloader_bin：https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Firmware/bootloader
-application_bin:https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Firmware/plug_01
+application_bin：https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Firmware/plug_01
 
 step3:固件下载成功后，点击如下链接下载固件下载工具。
 固件下载工具地址：https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7.zip
