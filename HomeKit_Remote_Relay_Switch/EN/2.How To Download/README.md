@@ -9,6 +9,10 @@ bootloader_bin：https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeK
 
 step3:After the firmware download is successful, click the link below to download the firmware download tool. Firmware download tool address：https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7.zip
 
+After the download tool is downloaded, select the 8266 chip type, select the appropriate serial port and click the START button to start the download.
+
+  <img src="../README_IMAGE/4.png" width="400" />
+ 
 Step4：Check the firmware you want to download on the download tool. The address is as follows:。
 
 |firmware             | download link      |
