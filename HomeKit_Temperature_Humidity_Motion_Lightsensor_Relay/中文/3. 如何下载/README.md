@@ -5,4 +5,4 @@
 选择合适的串口后，在按照如下图所示，配置串口号、串口波特率等，按 START 即可开始下载程序。
 
 
-    <img src="../README_IMAGE/3.png" width="400" />
+    <img src="../README_IMAGE/8.png" width="400" />
