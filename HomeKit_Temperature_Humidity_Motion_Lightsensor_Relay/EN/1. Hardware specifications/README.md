@@ -13,8 +13,8 @@ This product has multiple built-in sensors, including human body infrared, light
 
 |parameter                   |Value                                        |
 |-----------------------|-------------------------------------------|
-|product name：               | HomeKit温湿度+运动+光感+继电器                 |
-|Size：                  |直径：6.7cm 高度：3cm                      |
+|product name：               | HomeKitTemperature and humidity + motion + light sensor + relay               |
+|Size：                  |Diameter：6.7cm High：3cm                      |
 |Temperature measurement range：              |-40℃-80℃                                 |
 |Humidity measurement range：         |0-99.9%                                     |
 |Maximum human detection distance          |5m                                     |
