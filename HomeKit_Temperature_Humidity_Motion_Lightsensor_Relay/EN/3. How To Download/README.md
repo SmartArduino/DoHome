@@ -8,4 +8,4 @@ http://espressif.com/en/support/download/other-tools
 
 Step3：Burn the relevant bin file After selecting the appropriate serial port, configure the serial port number, serial port baud rate, etc. as shown below, and press START to start downloading the program.
 
-<img src="../README_IMAGE/3.png" width="400" />
+<img src="../README_IMAGE/8.png" width="400" />
