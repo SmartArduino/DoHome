@@ -25,7 +25,7 @@ Step4在下载工具上勾选需要下载的固件，其中的地址填写如下
 | ----------------- | -------------| 
 | rboot.bin         | 0x0000       | 
 | blank_config.bin  | 0x1000       | 
-| homekit_plug_four_relays.bin            | 0x2000       | 
+| multiple_sensors_relay4.bin            | 0x2000       | 
 
 
 Step5选择好下载器与你pc机连接的串口，点击下载
