@@ -5,7 +5,10 @@ step1：将四路继电器上的配网模组取下，插上下载器后，使用
 
 https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.51.3e8c4a9duXJDv0&id=581769095945
 
-step2：点击如下链接下载固件下载工具。
+step2击如下链接地址下载四路继电器固件：
+
+
+step3：点击如下链接下载固件下载工具。
 
 固件下载工具地址：https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7.zip
 
@@ -14,7 +17,7 @@ step2：点击如下链接下载固件下载工具。
   <img src="../README_IMAGE/9.png" width="400" />
 
 
-Step3：在下载工具上勾选需要下载的固件，其中的地址填写如下表。
+Step4在下载工具上勾选需要下载的固件，其中的地址填写如下表。
 
 | 固件              | 下载地址      |
 | ----------------- | -------------| 
@@ -23,4 +26,4 @@ Step3：在下载工具上勾选需要下载的固件，其中的地址填写如
 | homekit_plug_four_relays.bin            | 0x2000       | 
 
 
-Step4：选择好下载器与你pc机连接的串口，点击下载
+Step5选择好下载器与你pc机连接的串口，点击下载
