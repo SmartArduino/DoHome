@@ -11,7 +11,7 @@ step2：点击如下链接下载固件下载工具。
 
 下载工具下载完成后，芯片类型选择8266，选择合适的串口点击START按钮开始下载
 
-  <img src="../README_IMAGE/4.png" width="400" />
+  <img src="../README_IMAGE/9.png" width="400" />
 
 
 Step3：在下载工具上勾选需要下载的固件，其中的地址填写如下表。
