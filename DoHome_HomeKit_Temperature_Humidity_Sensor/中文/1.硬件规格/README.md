@@ -25,6 +25,10 @@
 
  <img src="../README_IMAGE/11.png" width="200" />         <img src="../README_IMAGE/13.png" width="200" />
  
+其中MCU使用GPIO-5引脚作为与温湿度传感器的数据传输引脚，具体的引脚接线如下：
+
+ <img src="../README_IMAGE/12.png" width="200" /> 
+ 
  
 
 
