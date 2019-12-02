@@ -3,6 +3,9 @@ step1：Remove the distribution network module on the remote relay, plug in the 
 Download link for downloader： 
 https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.51.3e8c4a9duXJDv0&id=581769095945
 
+step2:Click the following link to download the four-way relay firmware:
+
+
 step2:click the link below to download the firmware download tool. Firmware download tool address：https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7.zip
 
 After the download tool is downloaded, select the 8266 chip type, select the appropriate serial port and click the START button to start the download.
