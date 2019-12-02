@@ -18,10 +18,10 @@ For HomeKit Model（仅苹果手机）:
 第四步：确保苹果手机连接到你的家庭WiFi网络（如图4）
 注意：苹果手机和智能插座必须是在同一个家庭WiFi网络下。
     
-    <img src="../README_IMAGE/7png" width="400" />
+    <img src="../README_IMAGE/7.png" width="400" />
 
 第五步：打开苹果手机Home APP， 点击添加配件，点击“没有代码或无法扫描”，点击设备，点击仍然添加，输入设置代码：12345678，等待加密校验（30s-50s），添加设备成功。为了以后方便操作请重新命名。
 
 
-   <img src="../README_IMAGE/8png" width="400" />
+   <img src="../README_IMAGE/8.png" width="400" />
                                               
