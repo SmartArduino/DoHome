@@ -7,6 +7,8 @@ https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.51.3e8c4a9duXJDv
 
 step2击如下链接地址下载四路继电器固件：
 
+https://github.com/SmartArduino/DoHome/tree/master/HomeKit_Four_Way_Switch/Bin
+
 
 step3：点击如下链接下载固件下载工具。
 
