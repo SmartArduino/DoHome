@@ -25,3 +25,6 @@ For HomeKit Model（仅苹果手机）:
 
    <img src="../README_IMAGE/8.png" width="400" />
                                               
+## 2. 常见问题
+   1)如何把插座恢复出厂设置
+A: 开关三次（断电三次）既可恢复到出厂模式；
