@@ -23,8 +23,8 @@
 
 ### 3.1 温湿度传感器
 
- <img src="../README_IMAGE/11.png" width="400" />
+ <img src="../README_IMAGE/11.png" width="200" />         <img src="../README_IMAGE/13.png" width="200" />
  
- <img src="../README_IMAGE/13.png" width="400" />
+ 
 
 
