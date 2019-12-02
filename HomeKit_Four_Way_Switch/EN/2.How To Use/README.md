@@ -38,6 +38,7 @@ Step 5:
  
   <img src="../README_IMAGE/8.png" width="400" />
   Fig. 4 How to Pair HomeKit
+  
 ## 2. Frequent Problems:
 Q1: How to reset the socket to the factory mode?
 A: Switch three times (power off three times) can be restored to factory mode.
