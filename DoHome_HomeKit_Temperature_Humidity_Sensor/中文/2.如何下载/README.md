@@ -4,9 +4,11 @@
 3. 固件下载[下载地址](https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Temperature_Humidity_Sensor/Firmware)
 4. 烧录相关 bin 文件
 选择合适的串口后，在按照如下图所示，配置串口号、串口波特率等，按 START 即可开始下载程序。
-    固件下载地址：
-    |固件          |下载地址                     |
-    |--------------|-----------------------------|
-    |homekit_serson_ac.bin| 0x0000                            |
+
+固件下载地址：
+
+|固件          |下载地址                     |
+|--------------|-----------------------------|
+|homekit_serson_ac.bin| 0x0000                            |
 
     <img src="../README_IMAGE/3.png" width="400" />
