@@ -16,6 +16,6 @@ Step4：Check the firmware you want to download on the download tool. The addres
 
 |firmware             | download link      |
 | ----------------- | -------------| 
-| multiple_relay4.bin            | 0x2000       | 
+| multiple_relay4.bin            | 0x0000       | 
 
 Step5：Select the serial port that the downloader connects to your PC, click to download
