@@ -3,6 +3,7 @@
 2. 安装[烧写工具](http://espressif.com/en/support/download/other-tools)
 3. 固件下载[下载地址](https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Temperature_Humidity_Sensor/Firmware)
 4. 烧写工具和固件下载成功后，芯片类型选择ESP8266，如下为固件的下载时，填写的地址
+
 |固件          |下载地址                     |
 |--------------|-----------------------------|
 |homekit_serson_ac.bin| 0x0000                            |
