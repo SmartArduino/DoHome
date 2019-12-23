@@ -10,7 +10,7 @@ step2：与pc机连接正常后，点击如下链接下载相关固件。
 bootloader_bin：https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Firmware/bootloader
 application_bin：https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Firmware/plug_01
 
-step3:固件下载成功后，点击如下链接下载固件下载工具。
+step3:固件下载成功后，点击如下链接下载固件下载工具(工具类型选择ESP8266)。
 
 固件下载工具地址：https://www.espressif.com/zh-hans/support/download/other-tools
 
