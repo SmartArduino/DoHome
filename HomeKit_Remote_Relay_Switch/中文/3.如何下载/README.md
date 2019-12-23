@@ -7,11 +7,11 @@ https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.51.3e8c4a9duXJDv
 
 step2：与pc机连接正常后，点击如下链接下载合成固件。
 
-homekit_plug_01relays_1.3.3.bin:https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Firmware/plug_01/v1.3.3
+https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Firmware/plug_01/v1.3.3
 
 step3:固件下载成功后，点击如下链接下载固件下载工具(工具类型选择ESP8266)。
 
-固件下载工具地址：https://www.espressif.com/zh-hans/support/download/other-tools
+https://www.espressif.com/zh-hans/support/download/other-tools
 
 step4:工具和固件多下载到本地成功后，芯片类型选择8266，选择合适的串口点击START按钮开始下载，其中固件的下载地址填写如下表。
 
@@ -21,8 +21,6 @@ step4:工具和固件多下载到本地成功后，芯片类型选择8266，选�
 
   <img src="../README_IMAGE/4.png" width="400" />
 
-
-Step5：选择好下载器与你pc机连接的串口，点击下载
 
 
 
