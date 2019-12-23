@@ -12,7 +12,7 @@ application_bin：https://github.com/SmartArduino/DoHome/tree/master/DoHome_Home
 
 step3:固件下载成功后，点击如下链接下载固件下载工具。
 
-固件下载工具地址：https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7.zip
+固件下载工具地址：https://www.espressif.com/zh-hans/support/download/other-tools
 
 下载工具下载完成后，芯片类型选择8266，选择合适的串口点击START按钮开始下载
 
