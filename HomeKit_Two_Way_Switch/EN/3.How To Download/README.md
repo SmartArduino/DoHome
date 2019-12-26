@@ -1,7 +1,6 @@
 ## Download the firmware instructions using the downloader
-step1：Remove the distribution network module on the remote relay, plug in the downloader, and connect to your computer using the usb data cable.
-Download link for downloader： 
-https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.51.3e8c4a9duXJDv0&id=581769095945
+step1：Remove the distribution network module on the remote relay, plug in the downloader, and connect to your computer using the usb data cable.Download link for downloader： 
+https://www.aliexpress.com/item/4000299329131.html
 
 step2:Click the following link to download the four-way relay firmware:
 https://github.com/SmartArduino/DoHome/tree/master/HomeKit_Four_Way_Switch/Firmware
