@@ -3,7 +3,7 @@
 step1: Remove the distribution network module on the remote relay, plug in the downloader, and use a USB cable to connect to your computer.
 Downloader purchase link：
 
-https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.51.3e8c4a9duXJDv0&id=581769095945
+https://www.aliexpress.com/item/4000299329131.html
 
 step2: After the connection with the PC is normal, click the link below to download the synthetic firmware
 
