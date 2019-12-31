@@ -17,6 +17,7 @@
 |重量：                  |38.5g                                      |
 
 ## 3. 接口简介
+注意：四路继电器上的S1按键为模式设置按键，按下会进入smartconfig模式，导致homekit无法连接设备，正常使用不需要按下s1按键。
 
   <img src="../README_IMAGE/3.png" width="400" />
   
