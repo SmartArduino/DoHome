@@ -4,6 +4,7 @@ Download link for downloader：
 https://www.aliexpress.com/item/4000299329131.html
 
 step2:Click the following link to download the four-way relay firmware:
+
 Old normal firmware：
 https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/homekit_relay4.bin
 
