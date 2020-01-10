@@ -3,7 +3,7 @@
 step1：将四路继电器上的配网模组取下，插上下载器后，使用usb数据线与你的计算机连接。
 下载器的购买链接：
 
-https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.51.3e8c4a9duXJDv0&id=581769095945
+https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.25.23cc4e786tXfZl&id=602394770230
 
 step2击如下链接地址下载四路继电器固件：
 
