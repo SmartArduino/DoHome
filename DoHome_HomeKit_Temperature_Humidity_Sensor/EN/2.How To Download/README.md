@@ -9,7 +9,7 @@ http://espressif.com/en/support/download/other-tools
 step3：Firmware download：
 https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Temperature_Humidity_Sensor/Firmware
 
-step4：After downloading the programming tool and firmware successfully, select ESP8266 as the chip type. The following address is used for firmware download.
+step4：After downloading the programming tool and firmware successfully, select ESP8285 as the chip type. The following address is used for firmware download.
 
 |firmware      |download link                    |
 |--------------|-----------------------------|
