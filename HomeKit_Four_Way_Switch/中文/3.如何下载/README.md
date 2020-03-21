@@ -8,7 +8,7 @@ https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.25.23cc4e786tXfZ
 step2击如下链接地址下载四路继电器固件：
 
 老版固件：
-https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/homekit_relay4.bin
+https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/homekit_relay4_v1.0.6.bin
 
 带有点动设置的新版固件：
 https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/multiple_sensors_relay4jog.bin
