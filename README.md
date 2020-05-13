@@ -29,9 +29,9 @@ More Information: http://support.doiting.com/
 
 Go to Amazon or aliexpress to buy a socket
 
-[Homeassistant](https://www.hachina.io/)：  
+## [Homeassistant](https://www.hachina.io/)：  
 Use [组件](./DoHome_HassAssistant_Component)to connect to Homeassistant to realize platform linkage. 
-Supporting device：Plug、RGB colored lights、temperature and humidity、 human body detection、 temperature and humidity + light + human body + temperature and humidity + relay、 two-way relay、 four-way relay
+Supporting device：Plug、RGB colored lights、temperature and humidity、 human body detection、 temperature and humidity + light + human body + relay、 two-way relay、 four-way relay
 
 Link：<br>
 https://www.amazon.com/gp/product/B07WSYQ38T<br>
@@ -43,7 +43,7 @@ DoHome设备固件，您可以使用此固件，功能包括原生支持HomeKit�
 
 [Homeassistant](https://www.hachina.io/)：  
 使用[组件](./DoHome_HassAssistant_Component)接入Homeassistant，实现垮平台联动。    
-支持设备：单孔插座、RGB彩灯、温湿度、人体检测、温湿度+光照+人体+温湿度+继电器、两路继电器、四路继电器
+支持设备：单孔插座、RGB彩灯、温湿度、人体检测、温湿度+光照+人体+继电器、两路继电器、四路继电器
 
 Upgrade_DoHome_IoT_devices: 
 为了增加设备的可玩，DoHome 设备开放了升级接口和工具，您可以刷其它固件到DoHome设备。
