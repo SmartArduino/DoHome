@@ -1,7 +1,7 @@
 ## 1. 如何烧写固件
 1. 安装[串口驱动](https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Moon_Light/Drive)
 2. 安装[烧写工具](http://espressif.com/en/support/download/other-tools)
-3. 固件下载[下载地址](https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Motion_Detection_Sensor/Firmware/homekit_human_infrared.bin)
+3. 固件下载[下载地址](https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Motion_Detection_Sensor/Firmware/homekit_human_infrared_v1.1.0.bin)
 4. 烧写工具和固件下载成功后，芯片类型选择ESP8285，如下为固件的下载时，填写的地址
 
 |固件          |下载地址                     |

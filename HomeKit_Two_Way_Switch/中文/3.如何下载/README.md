@@ -7,8 +7,8 @@ https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.25.23cc4e786tXfZ
 
 step2点击击如下链接地址下载两路继电器固件：
 
-老版固件：
-https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Two_Way_Switch/Firmware/homekit_relay2.bin
+支持Homekit、HA的固件：
+https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/homekit_ha_two_way_relay_v1.1.0.bin
 
 带有点动设置新版固件：
 https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Two_Way_Switch/Firmware/multiple_sensors_relay2jog.bin

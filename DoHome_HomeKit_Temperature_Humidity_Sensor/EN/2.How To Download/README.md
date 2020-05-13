@@ -11,9 +11,10 @@ https://github.com/SmartArduino/DoHome/tree/master/DoHome_HomeKit_Temperature_Hu
 
 step4：After downloading the programming tool and firmware successfully, select ESP8285 as the chip type. The following address is used for firmware download.
 
-|firmware      |download link                    |
-|--------------|-----------------------------|
-|homekit_serson_ac.bin| 0x0000                            |
+|firmware                        |download link       |
+|-------------------------------|---------------------|
+|homekit_ha_temp_humi_v1.1.0.bin| 0x0000              |
+
 
 Step5：Burn the relevant bin file After selecting the appropriate serial port, configure the serial port number, serial port baud rate, etc. as shown below, and press START to start downloading the program.
 

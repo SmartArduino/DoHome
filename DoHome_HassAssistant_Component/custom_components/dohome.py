@@ -24,7 +24,7 @@ CONFIG_SCHEMA = vol.Schema({
     })
 }, extra=vol.ALLOW_EXTRA)
 
-DOHOME_COMPONENTS = [('switch', 'dohomeswitch'), ('light','dohomelight' )]
+DOHOME_COMPONENTS = [('switch', 'dohomeswitch'), ('light','dohomelight' ), ('sensor','dohomesensor' ), ('binary_sensor','dohomebinarysensor' )]
 DOHOME_GATEWAY = None
 
 _LOGGER = logging.getLogger(__name__)
@@ -68,12 +68,12 @@ class DoHomeGateway:
 
         try:
             _socket.sendto('cmd=ping\r\n'.encode(),(DISCOVERY_IP, self.GATEWAY_DISCOVERY_PORT))
-            _socket.settimeout(5.0)
+            _socket.settimeout(1.0)
 
             while True:
                 data, addr = _socket.recvfrom(self.SOCKET_BUFSIZE)
 
-                if len(data) < 10:
+                if len(data) < 70:
                     continue
 
                 _LOGGER.debug('DoHome devices %s ', data.decode("utf-8"))
@@ -98,9 +98,9 @@ class DoHomeGateway:
 
 class DoHomeDevice(Entity):
 
-    def __init__(self, device):
+    def __init__(self, name, device):
         self._sid = device['sid']
-        self._name = device['name']
+        self._name = name
         self._sta_ip = device['sta_ip']
         self._device_state_attributes = {}
 

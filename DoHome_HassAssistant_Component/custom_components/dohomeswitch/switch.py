@@ -19,7 +19,17 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
         for device in device_info:
             _LOGGER.info(device)
             if(device['type'] == '_DT-PLUG'):
-                switch_devices.append(DoHomeSwitch(hass, device))
+                switch_devices.append(DoHomeSwitch(hass, device["name"], "soft_poweroff", device))
+            if(device['type'] == '_THIMR'):
+                switch_devices.append(DoHomeSwitch(hass, device["name"], "relay", device))
+            if(device['type'] == '_REALY2'):    
+                switch_devices.append(DoHomeSwitch(hass, "Relay_" + device["sid"] + '_1', "relay1", device))
+                switch_devices.append(DoHomeSwitch(hass, "Relay_" + device["sid"] + '_2', "relay2", device))
+            if(device['type'] == '_REALY4'):    
+                switch_devices.append(DoHomeSwitch(hass, "Relay_" + device["sid"] + '_1', "relay1", device))
+                switch_devices.append(DoHomeSwitch(hass, "Relay_" + device["sid"] + '_2', "relay2", device))
+                switch_devices.append(DoHomeSwitch(hass, "Relay_" + device["sid"] + '_3', "relay3", device))
+                switch_devices.append(DoHomeSwitch(hass, "Relay_" + device["sid"] + '_4', "relay4", device))
     
     if(len(switch_devices) > 0):
         add_devices(switch_devices)
@@ -27,12 +37,13 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
 
 class DoHomeSwitch(DoHomeDevice, SwitchDevice):
 
-    def __init__(self, hass, device):
+    def __init__(self, hass, name, data_key, device):
         self._device = device
         self._state = False
+        self._data_key = data_key
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-        DoHomeDevice.__init__(self, device)
+        DoHomeDevice.__init__(self, name, device)
 
         track_time_interval(hass, self.updateStatus, timedelta(seconds=1))
 
@@ -45,24 +56,40 @@ class DoHomeSwitch(DoHomeDevice, SwitchDevice):
     def turn_on(self, **kwargs):
         """Turn the switch on."""
         self._state = True
-        self._send_cmd(self._device,'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op={"cmd":5,"op":1 }', 5)
+        if(self._device['type'] == '_DT-PLUG' or self._device['type'] == '_THIMR'):
+            self._send_cmd(self._device,'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op={"cmd":5,"op":1 }', 5)
+        if(self._device['type'] == '_REALY2' or self._device['type'] == '_REALY4'):
+            self._send_cmd(self._device, 'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op={"cmd":5,"'+ self._data_key +'":1 }', 5)
 
     def turn_off(self):
         """Turn the switch off."""
         self._state = False
-        self._send_cmd(self._device, 'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op={"cmd":5,"op":0 }', 5)
+        if(self._device['type'] == '_DT-PLUG' or self._device['type'] == '_THIMR'):
+            self._send_cmd(self._device, 'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op={"cmd":5,"op":0 }', 5)
+        if(self._device['type'] == '_REALY2' or self._device['type'] == '_REALY4'): 
+            self._send_cmd(self._device, 'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op={"cmd":5,"'+ self._data_key +'":0 }', 5)
 
     def updateStatus(self, now):
         resp = self._send_cmd(self._device, 'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op={"cmd":25}', 25)
-        if resp is not None and "soft_poweroff" in resp:
-            if(resp["soft_poweroff"]):
-                if(self._state != False):
-                    self._state = False
-                    self.schedule_update_ha_state()
+        if resp is not None and self._data_key in resp:
+            if(self._device['type'] == '_DT-PLUG'):
+                if(resp[self._data_key]):
+                    if(self._state != False):
+                        self._state = False
+                        self.schedule_update_ha_state()
+                else:
+                    if(self._state != True):
+                        self._state = True
+                        self.schedule_update_ha_state()
             else:
-                if(self._state != True):
-                    self._state = True
-                    self.schedule_update_ha_state()
+                if(resp[self._data_key]):
+                    if(self._state != True):
+                        self._state = True
+                        self.schedule_update_ha_state()
+                else:
+                    if(self._state != False):
+                        self._state = False
+                        self.schedule_update_ha_state()
 
     def _send_cmd(self, device, cmd, rtn_cmd):
 

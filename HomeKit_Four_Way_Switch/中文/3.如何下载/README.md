@@ -7,8 +7,8 @@ https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-1811579842.25.23cc4e786tXfZ
 
 step2击如下链接地址下载四路继电器固件：
 
-老版固件：
-https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/homekit_relay4_v1.0.6.bin
+支持Homekit、HA的固件：
+https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/homekit_ha_four_way_relay_v1.1.0.bin
 
 带有点动设置的新版固件：
 https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/multiple_sensors_relay4jog.bin
@@ -24,9 +24,9 @@ step3：点击如下链接下载固件下载工具。
 
 Step4在下载工具上勾选需要下载的固件，其中的地址填写如下表。
 
-| 固件              | 下载地址      |
-| ----------------- | -------------| 
-| multiple_relay4.bin            | 0x0000       | 
+| 固件                                 | 下载地址      |
+| -------------------------------------| -------------| 
+| homekit_four_way_relay_v1.1.0.bin    | 0x0000       | 
 
 
 Step5选择好下载器与你pc机连接的串口，点击下载

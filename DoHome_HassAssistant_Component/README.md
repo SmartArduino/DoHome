@@ -4,18 +4,22 @@
 将DoHome设备接入HomeAssistant的插件
 
 * 局域网自动发现
-* 支持设备：插座、彩色灯
+* 支持设备：单孔插座、RGB彩灯、温湿度、人体检测、温湿度+光照+人体+温湿度+继电器、两路继电器、四路继电器
 
-<img src="./image/interface.png" height="400"> 
+<img src="./image/index.png" height="400"> 
 
 
-## 插座
+## 插座、联络继电器、四路继电器
 * 支持局域网控制和设备状态反馈    
 <img src="./image/switch_control.png" height="150"> 
 
 ## 彩色灯
 * 支持全彩RGB和的亮度调节    
 <img src="./image/light_control.png" height="300"> 
+
+## 传感器
+* 支持温湿度、光照、人气检测    
+<img src="./image/sensor.png" height="80"> 
 
 ## 使用说明
 ### 1 添加插件

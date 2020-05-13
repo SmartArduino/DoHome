@@ -7,7 +7,7 @@ Install programming tool：
 http://espressif.com/en/support/download/other-tools
 
 step3：Firmware download：
-https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Motion_Detection_Sensor/Firmware/homekit_human_infrared.bin
+https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Motion_Detection_Sensor/Firmware/homekit_human_infrared_v1.1.0.bin
 
 step4：After downloading the programming tool and firmware successfully, select ESP8285 as the chip type. The following address is used for firmware download.
 

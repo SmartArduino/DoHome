@@ -29,7 +29,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
         for device in device_info:
             _LOGGER.info(device)
             if(device['type'] == '_DT-WYRGB'):
-                light_devices.append(DoHomeLight(hass, device))
+                light_devices.append(DoHomeLight(hass, device["name"], device))
     
     if(len(light_devices) > 0):
         add_devices(light_devices)
@@ -37,14 +37,14 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
 
 class DoHomeLight(DoHomeDevice, Light):
 
-    def __init__(self, hass, device):
+    def __init__(self, hass, name, device):
         self._device = device
         self._state = False
         self._rgb = (255, 255, 255)
         self._brightness = 100
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-        DoHomeDevice.__init__(self, device)
+        DoHomeDevice.__init__(self, name, device)
 
     @property
     def brightness(self):

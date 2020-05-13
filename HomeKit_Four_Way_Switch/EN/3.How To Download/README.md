@@ -5,8 +5,8 @@ https://www.aliexpress.com/item/4000299329131.html
 
 step2:Click the following link to download the four-way relay firmware:
 
-Old normal firmware：
-https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/homekit_relay4.bin
+Homekit HA firmware：
+https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/homekit_ha_four_way_relay_v1.1.0.bin
 
 New firmware with jog settings：
 https://github.com/SmartArduino/DoHome/blob/master/HomeKit_Four_Way_Switch/Firmware/multiple_sensors_relay4jog.bin
@@ -19,8 +19,9 @@ After the download tool is downloaded, select the 8266 chip type, select the app
  
 Step4：Check the firmware you want to download on the download tool. The address is as follows:。
 
-|firmware             | download link      |
-| ----------------- | -------------| 
-| multiple_relay4.bin            | 0x0000       | 
+|firmware                                  | download link|
+| ---------------------------------------- | -------------| 
+| homekit_four_way_relay_v1.1.0.bin        | 0x0000       | 
 
 Step5：Select the serial port that the downloader connects to your PC, click to download
+ha_

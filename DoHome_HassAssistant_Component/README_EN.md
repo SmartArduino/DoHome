@@ -4,18 +4,22 @@
 Have the HomeAssistant support the Components for the DoHome device     
 
 * LAN auto discovery
-* Support devices：Plug、Color Light
+* Support devices：Plug、RGB colored lights、temperature and humidity、 human body detection、 temperature and humidity + light + human body + temperature and humidity + relay、 two-way relay、 four-way relay
 
-<img src="./image/interface.png" height="400"> 
+<img src="./image/index.png" height="400"> 
 
 
-## Plug
+## Plug、Two-way relay、 Four-way relay
 * Support LAN control and device status feedback    
 <img src="./image/switch_control.png" height="150"> 
 
 ## Color Light
 * Support full color RGB and brightness adjustment        
 <img src="./image/light_control.png" height="300"> 
+
+## Sensor
+* Support temperature and humidity, light, human detection     
+<img src="./image/sensor.png" height="80"> 
 
 ## Directions for use
 ### 1、Add the components
