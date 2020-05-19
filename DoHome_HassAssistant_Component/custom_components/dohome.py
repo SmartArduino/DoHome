@@ -68,6 +68,7 @@ class DoHomeGateway:
 
         try:
             _socket.sendto('cmd=ping\r\n'.encode(),(DISCOVERY_IP, self.GATEWAY_DISCOVERY_PORT))
+            _socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
             _socket.settimeout(1.0)
 
             while True:

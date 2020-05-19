@@ -17,8 +17,8 @@
 * 支持全彩RGB和的亮度调节    
 <img src="./image/light_control.png" height="300"> 
 
-## 传感器
-* 支持温湿度、光照、人气检测    
+## 传感器 
+* 支持温湿度、光照、人体检测    
 <img src="./image/sensor.png" height="80"> 
 
 ## 使用说明
