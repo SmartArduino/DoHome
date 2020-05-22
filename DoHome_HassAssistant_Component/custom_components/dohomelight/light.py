@@ -28,7 +28,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     for (device_type, device_info) in devices.items():
         for device in device_info:
             _LOGGER.info(device)
-            if(device['type'] == '_DT-WYRGB'):
+            if(device['type'] == '_DT-WYRGB' or device['type'] == '_DT-WRGB' or device['type'] == '_STRIPE'):
                 light_devices.append(DoHomeLight(hass, device["name"], device))
     
     if(len(light_devices) > 0):
