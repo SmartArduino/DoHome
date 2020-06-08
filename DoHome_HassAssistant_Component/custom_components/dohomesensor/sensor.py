@@ -32,10 +32,10 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
         for device in device_info:
             _LOGGER.info(device)
             if(device['type'] == '_STRIPE' or device['type'] == '_THIMR'):
-                sensor_devices.append(DoHomeSensor(hass, 'Temperature', TEMPERATURE_KEY, device))
-                sensor_devices.append(DoHomeSensor(hass, 'Humidity',HUMIDITY_KEY, device))
+                sensor_devices.append(DoHomeSensor(hass, 'Temperature_' + device['sid'], TEMPERATURE_KEY, device))
+                sensor_devices.append(DoHomeSensor(hass, 'Humidity_' + device['sid'],HUMIDITY_KEY, device))
             if(device['type'] == '_THIMR'):
-                sensor_devices.append(DoHomeSensor(hass, 'illumination',ILLUMINATION_KEY, device))
+                sensor_devices.append(DoHomeSensor(hass, 'illumination_' + device['sid'],ILLUMINATION_KEY, device))
     
     if(len(sensor_devices) > 0):
         add_devices(sensor_devices)

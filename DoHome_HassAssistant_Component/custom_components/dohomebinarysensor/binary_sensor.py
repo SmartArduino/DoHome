@@ -49,7 +49,7 @@ class MotionSensor(DoHomeDevice, BinarySensorDevice):
         self._data_key = 'motion'
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-        DoHomeDevice.__init__(self, 'Motion Sensor', device)
+        DoHomeDevice.__init__(self, 'Motion_' + device['sid'], device)
 
         track_time_interval(hass, self.updateStatus, timedelta(seconds=1))
 
