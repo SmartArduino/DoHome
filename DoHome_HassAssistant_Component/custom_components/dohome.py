@@ -29,6 +29,13 @@ DOHOME_GATEWAY = None
 
 _LOGGER = logging.getLogger(__name__)
 
+def get_alias(name):
+    alias = {
+        # 'Plug_XXXX': 'Dohome 插座'
+    }
+    return alias[name] if name in alias else name
+
+
 def setup(hass, config):
 
     global DISCOVERY_IP
@@ -86,7 +93,7 @@ class DoHomeGateway:
 
                 dohome_device = {
                     "sid":resp["device_name"][-4:],
-                    "name":resp["device_name"],
+                    "name": get_alias(resp["device_name"]),
                     "sta_ip":resp["sta_ip"],
                     "type":device_type}
 
