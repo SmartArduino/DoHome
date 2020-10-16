@@ -45,7 +45,7 @@ class DoHomeLight(DoHomeDevice, LightEntity):
         self._brightness = 100
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-        DoHomeDevice.__init__(self, device)
+        DoHomeDevice.__init__(self, device['name'], device)
 
     @property
     def brightness(self):
