@@ -14,7 +14,7 @@ try:
 except ImportError:
     from custom_components.dohome import (DOHOME_GATEWAY, DoHomeDevice)
 
-from homeassistant.components.binary_sensor import BinarySensorDevice
+from homeassistant.components.binary_sensor import BinarySensorEntity
 
 
 NO_CLOSE = 'no_close'
@@ -27,6 +27,7 @@ ATTR_NO_MOTION_SINCE = 'No motion since'
 
 _LOGGER = logging.getLogger(__name__)
 
+
 def setup_platform(hass, config, add_devices, discovery_info=None):
     """Perform the setup for Xiaomi devices."""
     sensor_devices = []
@@ -36,12 +37,12 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
             _LOGGER.info(device)
             if(device['type'] == '_MOTION' or device['type'] == '_THIMR'):
                 sensor_devices.append(MotionSensor(hass, device))
-    
+
     if(len(sensor_devices) > 0):
         add_devices(sensor_devices)
 
 
-class MotionSensor(DoHomeDevice, BinarySensorDevice):
+class MotionSensor(DoHomeDevice, BinarySensorEntity):
 
     def __init__(self, hass, device):
         self._device = device
