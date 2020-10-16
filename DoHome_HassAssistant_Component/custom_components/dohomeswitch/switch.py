@@ -4,7 +4,7 @@ import json
 from datetime import timedelta
 from homeassistant.helpers.event import track_time_interval
 
-from homeassistant.components.switch import SwitchDevice
+from homeassistant.components.switch import SwitchEntity
 try:
     from homeassistant.components.dohome import (DOHOME_GATEWAY, DoHomeDevice)
 except ImportError:
@@ -35,7 +35,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
         add_devices(switch_devices)
 
 
-class DoHomeSwitch(DoHomeDevice, SwitchDevice):
+class DoHomeSwitch(DoHomeDevice, SwitchEntity):
 
     def __init__(self, hass, name, data_key, device):
         self._device = device
