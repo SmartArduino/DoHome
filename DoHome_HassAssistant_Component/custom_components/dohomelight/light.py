@@ -12,7 +12,7 @@ from homeassistant.components.light import (
     PLATFORM_SCHEMA,
     SUPPORT_BRIGHTNESS,
     SUPPORT_COLOR,
-    Light,
+    LightEntity,
 )
 
 try:
@@ -22,6 +22,7 @@ except ImportError:
 
 _LOGGER = logging.getLogger(__name__)
 
+
 def setup_platform(hass, config, add_devices, discovery_info=None):
     light_devices = []
     devices = DOHOME_GATEWAY.devices
@@ -30,12 +31,12 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
             _LOGGER.info(device)
             if(device['type'] == '_DT-WYRGB'):
                 light_devices.append(DoHomeLight(hass, device))
-    
+
     if(len(light_devices) > 0):
         add_devices(light_devices)
 
 
-class DoHomeLight(DoHomeDevice, Light):
+class DoHomeLight(DoHomeDevice, LightEntity):
 
     def __init__(self, hass, device):
         self._device = device
@@ -44,7 +45,7 @@ class DoHomeLight(DoHomeDevice, Light):
         self._brightness = 100
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-        DoHomeDevice.__init__(self, device)
+        DoHomeDevice.__init__(self, device['name'], device)
 
     @property
     def brightness(self):
@@ -76,27 +77,29 @@ class DoHomeLight(DoHomeDevice, Light):
 
         self._state = True
         data = {
-                "cmd":6,
-                "r":int(50 * self._rgb[0] / 255)*self._brightness,
-                "g":int(50 * self._rgb[1] / 255)*self._brightness,
-                "b":int(50 * self._rgb[2] / 255)*self._brightness,
-                "w":0,
-                "m":0}
+            "cmd": 6,
+            "r": int(50 * self._rgb[0] / 255)*self._brightness,
+            "g": int(50 * self._rgb[1] / 255)*self._brightness,
+            "b": int(50 * self._rgb[2] / 255)*self._brightness,
+            "w": 0,
+            "m": 0}
         op = json.dumps(data)
-        self._send_cmd(self._device,'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op=' + op + '}', 6)
+        self._send_cmd(
+            self._device, 'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op=' + op + '}', 6)
 
     def turn_off(self, **kwargs):
         """Turn the light off."""
         self._state = False
         data = {
-                "cmd":6,
-                "r":0,
-                "g":0,
-                "b":0,
-                "w":0,
-                "m":0}
+            "cmd": 6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "w": 0,
+            "m": 0}
         op = json.dumps(data)
-        self._send_cmd(self._device,'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op=' + op + '}', 6)
+        self._send_cmd(
+            self._device, 'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op=' + op + '}', 6)
 
     def _send_cmd(self, device, cmd, rtn_cmd):
 
@@ -110,14 +113,17 @@ class DoHomeLight(DoHomeDevice, Light):
         if data is None:
             return None
         _LOGGER.debug("result :%s", data.decode("utf-8"))
-        dic = {i.split("=")[0]:i.split("=")[1] for i in data.decode("utf-8").split("&")}
+        dic = {i.split("=")[0]: i.split("=")[1]
+               for i in data.decode("utf-8").split("&")}
         resp = []
         if(dic["dev"][8:12] == device["sid"]):
             resp = json.loads(dic["op"])
             if resp['cmd'] != rtn_cmd:
-                _LOGGER.debug("Non matching response. Expecting %s, but got %s", rtn_cmd, resp['cmd'])
+                _LOGGER.debug(
+                    "Non matching response. Expecting %s, but got %s", rtn_cmd, resp['cmd'])
                 return None
             return resp
         else:
-            _LOGGER.debug("Non matching response. device %s, but got %s", device["sid"], dic["dev"][8:12])
+            _LOGGER.debug("Non matching response. device %s, but got %s",
+                          device["sid"], dic["dev"][8:12])
             return None
