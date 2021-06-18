@@ -1,0 +1,8 @@
+{
+  "domain": "dohome",
+  "name": "dohome ha component",
+  "issue_tracker": "https://github.com/SmartArduino/DoHome/issues",
+  "documentation": "https://github.com/SmartArduino/DoHome/tree/master/DoHome_HassAssistant_Component",
+  "requirements": [],
+  "version": "0.2.0"
+}
