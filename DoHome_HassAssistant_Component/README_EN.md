@@ -32,6 +32,16 @@ dohome:
   discovery_ip: '192.168.9.255'    #Used to discover the broadcast IP of the device, this parameter may be omitted
   discovery_retry: 3                    #The number of attempts found on the Intranet, this parameter may be omitted
 ```
+
+### 3 Configure the device name
+DoHome devices added to HomeAssistant by default will be displayed as their host name, such as' Plug_ABCD '(' ABCD' is the last four digits of the device's MAC address), and will not be synchronized with the device name configured in the DoHome App. Users can configure the name of their device by modifying the 'alias' variable of the' get_alias() 'function in' custom_components/dohome/__init__. Py '. Here's an example. The name takes effect when the HomeAssistant service is restarted.
+```python
+alias = {
+    'Plug_AAAA': 'living room socket ',
+    'Plug_AAAB': 'bedroom socket'
+}
+```
+
 #### Configuration instructions
 1. If you install HomeAssistant under Linux or Windows use Python, you can leave out the discovery_ip parameter. You can just add `dohome:`
 2. If you use Docker to install HomeAssistant, you need to add discovery_ip parameter when using this plug-in, IP is the broadcast IP of the routing gateway IP of the connection, and when your local IP is 192.168.9.17, just change the last bit to 255.configuration is `discovery_ip: '192.168.9.255'`

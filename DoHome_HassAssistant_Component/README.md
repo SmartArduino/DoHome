@@ -34,7 +34,7 @@ dohome:
 ```
 ### 3 配置设备名称
 
-默认加入到 HomeAssistant 的 DoHome 设备将显示为其主机名，例如 `Plug_ABCD` （`ABCD` 为该设备 MAC 地址的末四位），而不会与 DoHome App 中所配置的设备名称同步。用户可以在 `custom_components/dohome.py` 里修改 `get_alias()` 函数的 `alias` 变量，为自己的设备配置名称。样例如下。重启 HomeAssistant 服务后名称生效。
+默认加入到 HomeAssistant 的 DoHome 设备将显示为其主机名，例如 `Plug_ABCD` （`ABCD` 为该设备 MAC 地址的末四位），而不会与 DoHome App 中所配置的设备名称同步。用户可以在 `custom_components/dohome/__init__.py` 里修改 `get_alias()` 函数的 `alias` 变量，为自己的设备配置名称。样例如下。重启 HomeAssistant 服务后名称生效。
 
 ```python
 alias = {
