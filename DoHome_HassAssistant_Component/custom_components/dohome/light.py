@@ -13,11 +13,12 @@ from homeassistant.components.light import (
     ATTR_BRIGHTNESS,
     ATTR_COLOR_TEMP,
     ATTR_EFFECT,
-    ATTR_HS_COLOR,
+    ATTR_RGBWW_COLOR,
     PLATFORM_SCHEMA,
     SUPPORT_BRIGHTNESS,
     SUPPORT_COLOR,
     LightEntity,
+    ColorMode
 )
 
 from . import (DOHOME_GATEWAY, DoHomeDevice)
@@ -43,7 +44,7 @@ class DoHomeLight(DoHomeDevice, LightEntity):
 
         self._device = device
         self._state = False
-        self._rgb = (255, 255, 255)
+        self._rgb = (255, 255, 255, 255, 255)
         self._brightness = 100
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
@@ -55,9 +56,9 @@ class DoHomeLight(DoHomeDevice, LightEntity):
         return self._brightness
 
     @property
-    def hs_color(self):
+    def rgbww_color(self):
         """Return the color property."""
-        return color_util.color_RGB_to_hs(*self._rgb)
+        return self._rgb
 
     @property
     def is_on(self):
@@ -69,10 +70,24 @@ class DoHomeLight(DoHomeDevice, LightEntity):
         """Return the supported features."""
         return SUPPORT_BRIGHTNESS | SUPPORT_COLOR
 
+    @property
+    def supported_color_modes(self):
+        """Return the supported color modes."""
+        return [ColorMode.RGBWW]
+
+    @property
+    def color_mode(self):
+        """Return the supported color modes."""
+        return ColorMode.RGBWW
+
+    @property
+    def unique_id(self):
+        return self._device["name"]
+
     def turn_on(self, **kwargs):
         """Turn the light on."""
-        if ATTR_HS_COLOR in kwargs:
-            self._rgb = color_util.color_hs_to_RGB(*kwargs[ATTR_HS_COLOR])
+        if ATTR_RGBWW_COLOR in kwargs:
+            self._rgb = kwargs[ATTR_RGBWW_COLOR]
 
         if ATTR_BRIGHTNESS in kwargs:
             self._brightness = int(100 * kwargs[ATTR_BRIGHTNESS] / 255)
@@ -83,8 +98,9 @@ class DoHomeLight(DoHomeDevice, LightEntity):
                 "r":int(50 * self._rgb[0] / 255)*self._brightness,
                 "g":int(50 * self._rgb[1] / 255)*self._brightness,
                 "b":int(50 * self._rgb[2] / 255)*self._brightness,
-                "w":0,
-                "m":0}
+                "w":int(50 * self._rgb[3] / 255)*self._brightness,
+                "m":int(50 * self._rgb[4] / 255)*self._brightness
+                }
         op = json.dumps(data)
         self._send_cmd(self._device,'cmd=ctrl&devices={[' + self._device["sid"] + ']}&op=' + op + '}', 6)
 
